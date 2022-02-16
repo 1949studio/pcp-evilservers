@@ -1,11 +1,5 @@
 # JNDI-Injection-Exploit
-
-[Materials about JNDI Injection](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE.pdf)
-
-[中文文档](https://github.com/welk1n/JNDI-Injection-Exploit/blob/master/README-CN.md)
-
-[相关文章](https://www.cnblogs.com/Welk1n/p/11066397.html)
-
+The original source of these codes can be found here: https://github.com/welk1n/JNDI-Injection-Exploit/
 ## Description
 
 JNDI-Injection-Exploit is a tool for generating workable JNDI links and provide background services by starting RMI server,LDAP server and HTTP server. RMI server and LDAP server are based on  [marshals](https://github.com/mbechler/marshalsec) and modified further to link with HTTP server. 
