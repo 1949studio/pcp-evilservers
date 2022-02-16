@@ -54,10 +54,11 @@ public class JettyServer implements Runnable{
         public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 
             String filename = request.getRequestURI().substring(1);
+
             InputStream in = checkFilename(filename);
             byte[] transformed;
             ByteArrayInputStream bain = null;
-
+            System.out.println("Attempt filename: " + filename);
             if (in != null) {
                 try {
                     transformed = insertCommand(in,command);

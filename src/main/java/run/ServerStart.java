@@ -23,7 +23,7 @@ public class ServerStart {
     public static String addr = getLocalIpByNetcard();
 
     //default ports
-    public static int rmiPort = 1099;
+    public static int rmiPort = 1199;
     public static int ldapPort = 1389;
     private static int jettyPort = 8180;
 

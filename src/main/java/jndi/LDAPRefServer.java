@@ -91,7 +91,6 @@ public class LDAPRefServer implements Runnable{
             InMemoryDirectoryServer ds = new InMemoryDirectoryServer(config);
             System.out.println(getLocalTime() + " [LDAPSERVER] >> Listening on 0.0.0.0:" + port); //$NON-NLS-1$
             ds.startListening();
-
         }
         catch ( Exception e ) {
             e.printStackTrace();
@@ -134,6 +133,9 @@ public class LDAPRefServer implements Runnable{
 
             String cbstring = this.codebase.toString();
             String javaFactory = Mapper.references.get(base);
+            System.out.println("base value: " + base);
+            System.out.println("cbstring: " + cbstring);
+            System.out.println("JavaFactory: " + javaFactory);
 
             if (javaFactory != null){
                 URL turl = new URL(cbstring + javaFactory.concat(".class"));

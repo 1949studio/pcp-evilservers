@@ -28,6 +28,8 @@ public class Mapper {
     static {
         references.put(RandomStringUtils.randomAlphanumeric(6).toLowerCase(),"ExecTemplateJDK8");
         references.put(RandomStringUtils.randomAlphanumeric(6).toLowerCase(),"ExecTemplateJDK7");
+        // references.put(RandomStringUtils.randomAlphanumeric(6).toLowerCase(),"Payload");
+        // references.put(RandomStringUtils.randomAlphanumeric(6).toLowerCase(),"Payload");
         references.put(RandomStringUtils.randomAlphanumeric(6).toLowerCase(),"BypassByEL");
 
         instructions.put("ExecTemplateJDK8","Build in "+ withColor("JDK 1.8",ANSI_RED) +" whose trustURLCodebase is true");
